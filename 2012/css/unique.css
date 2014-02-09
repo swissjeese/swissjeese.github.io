@@ -267,7 +267,7 @@ p.sponsor-search {color:#cfc0af;font-size:1.1em;padding-left:0;}
     padding:0;
 }
 .webdoc.black {
-    background: transparent url('/images/sponsors/webdoc_211_43_black.png') no-repeat top left;
+    background: transparent url('../images/sponsors/webdoc_211_43_black.png') no-repeat top left;
     width:211px;
     height:43px;
     float:left;
@@ -275,7 +275,7 @@ p.sponsor-search {color:#cfc0af;font-size:1.1em;padding-left:0;}
     text-indent: -9999px;
 }
 .nelmio.black {
-    background: transparent url('/images/sponsors/nelmio_172_43_black.png') no-repeat top left;
+    background: transparent url('../images/sponsors/nelmio_172_43_black.png') no-repeat top left;
     width:172px;
     height:43px;
     float:left;
@@ -284,7 +284,7 @@ p.sponsor-search {color:#cfc0af;font-size:1.1em;padding-left:0;}
 }
 
 .webdoc.white {
-    background: transparent url('/images/sponsors/webdoc_211_43_white.png') no-repeat top left;
+    background: transparent url('../images/sponsors/webdoc_211_43_white.png') no-repeat top left;
     width:211px;
     height:43px;
     float:left;
@@ -292,7 +292,7 @@ p.sponsor-search {color:#cfc0af;font-size:1.1em;padding-left:0;}
     text-indent: -9999px;
 }
 .nelmio.white {
-    background: transparent url('/images/sponsors/nelmio_172_43_white.png') no-repeat top left;
+    background: transparent url('../images/sponsors/nelmio_172_43_white.png') no-repeat top left;
     width:172px;
     height:43px;
     float:left;
