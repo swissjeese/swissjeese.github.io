@@ -297,11 +297,11 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
     text-indent: -9999px;
 }
 
-#freeticket, .javascript-logo, #swissjeese-logo, #follow_twitter, #bear, .logo_relaxintheair{
+#buyticket, .javascript-logo, #swissjeese-logo, #follow_twitter, #bear, .logo_relaxintheair{
 	background: url(../images/sprites/sprites_desktop.png) no-repeat;
 }
 
-#freeticket{
+#buyticket{
 	background-position: 0 -1px ;
 	width: 212px;
 	height: 64px;
@@ -312,7 +312,7 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
 	right:70px;
 }
 
-#freeticket:hover {
+#buyticket:hover {
 	background-position: -218px 0;
 }
 
@@ -345,7 +345,7 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
     position:absolute;
 	background-position: -12px -83px ;
 	width: 599px;
-	height: 123px;
+	height: 173px;
 	text-indent:-9999px;
 }
 
@@ -363,7 +363,7 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
 }
 
 #follow_twitter,
-#freeticket,
+#buyticket,
 #bear,
 #swissjeese-logo{
     -moz-animation-delay: 0s;
