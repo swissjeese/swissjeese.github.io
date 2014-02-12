@@ -301,6 +301,16 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
 	background: url(../images/sprites/sprites_desktop.png) no-repeat;
 }
 
+#event2012 {
+	color: #cdcdcd;
+    font-size: 90%;
+    font-family: 'Oleo Script', cursive;
+    font-style: italic;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
 #buyticket{
 	background-position: 0 -1px ;
 	width: 212px;
