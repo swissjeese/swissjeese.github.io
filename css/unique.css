@@ -38,7 +38,7 @@ body,ul,li {
 
 body {
 	font-size:16px;
-	background:#672f13 url('/images/backgrounds/wood_802x1048.jpg') repeat left top;
+	background:#672f13 url('../images/backgrounds/wood_802x1048.jpg') repeat left top;
     font-family: Helvetica, Arial, Sans-Serif;
     text-align:center;
     line-height:150%;
