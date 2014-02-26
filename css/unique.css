@@ -105,18 +105,24 @@ span.menu-tab.off a {
     color:#c87f01;
 }
 
-p {
+p, ul {
     padding:5px 20px 0;
     font-family: Helvetica, Arial,  Sans-Serif;
 	font-size:1em;
     line-height:150%;
 }
 
-p strong {
+li {
+    margin-left: 20px;
+    list-style: disc;
+    line-height: 150%;
+}
+
+p strong, ul strong {
     font-weight:bold;
 }
 
-p a {
+p a, ul a {
     color:#1c92ce;
     text-decoration:underline;
 }
