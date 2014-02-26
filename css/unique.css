@@ -127,6 +127,18 @@ p a, ul a {
     text-decoration:underline;
 }
 
+.highlight {
+    background: #f09800;
+    color: black;/*
+    background: #3f3a3b;
+    color: #f09800;*/
+    display: inline-block;
+    padding: 0 3px;
+    margin: 0 -3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
 h1 {
     padding:10px 20px 5px;
     font-family: 'Oleo Script', cursive;
