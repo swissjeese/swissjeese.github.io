@@ -281,34 +281,34 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
 .sponsors-top > div {
     padding:0;
 }
-.webdoc.black {
-    background: transparent url('/images/sponsors/webdoc_211_43_black.png') no-repeat top left;
-    width:211px;
+.sensational.black {
+    background: transparent url('/images/sponsors/sensational_323_43_white.png') no-repeat top left;
+    width:323px;
     height:43px;
     float:left;
     margin-right: 40px;
     text-indent: -9999px;
 }
-.nelmio.black {
-    background: transparent url('/images/sponsors/nelmio_172_43_black.png') no-repeat top left;
-    width:172px;
+.ginetta.black {
+    background: transparent url('/images/sponsors/ginetta_122_43_white.png') no-repeat top left;
+    width:122px;
     height:43px;
     float:left;
     margin-right: 0px;
     text-indent: -9999px;
 }
 
-.webdoc.white {
-    background: transparent url('/images/sponsors/webdoc_211_43_white.png') no-repeat top left;
-    width:211px;
+.sensational.white {
+    background: transparent url('/images/sponsors/sensational_323_43_white.png') no-repeat top left;
+    width:323px;
     height:43px;
     float:left;
     margin-right: 40px;
     text-indent: -9999px;
 }
-.nelmio.white {
-    background: transparent url('/images/sponsors/nelmio_172_43_white.png') no-repeat top left;
-    width:172px;
+.ginetta.white {
+    background: transparent url('/images/sponsors/ginetta_122_43_white.png') no-repeat top left;
+    width:122px;
     height:43px;
     float:left;
     margin-right: 0px;
