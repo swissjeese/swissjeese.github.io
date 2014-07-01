@@ -190,15 +190,19 @@ div.event div.speaker img {
     border:8px solid #000;
 }
 
-div.event div.talk {
+div.event div.talk,
+div.event div.description {
     padding:5px 20px;
-    width:60%;
-    float:right;
     line-height: 150%;
     color:#3f3a3b;
 }
 
-div.talk h2 {
+div.event div.talk {
+    width:60%;
+    float:right;
+}
+
+div.event h2 {
     font-size:20px;
     font-weight:bold;
     margin:0 0 20px 0;
