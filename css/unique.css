@@ -214,8 +214,9 @@ h1 {
     position:relative;
     background:#000;
     width:100%;
-    height:300px;
+    /*height:300px;*/
     margin-top:300px;
+    padding-bottom: 20px;
     padding-top:40px;
     font-size: 0.8em;
 
@@ -302,6 +303,14 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
     margin-right: 0px;
     text-indent: -9999px;
 }
+.swisstxt.black {
+    background: transparent url('/images/sponsors/STXT_MS_4f_neg.png') no-repeat top left;
+    width:122px;
+    height:43px;
+    float:left;
+    margin-right: 0px;
+    text-indent: -9999px;
+}
 
 .sensational.white {
     background: transparent url('/images/sponsors/sensational_323_43_white.png') no-repeat top left;
@@ -314,6 +323,14 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
 .ginetta.white {
     background: transparent url('/images/sponsors/ginetta_122_43_white.png') no-repeat top left;
     width:122px;
+    height:43px;
+    float:left;
+    margin-right: 0px;
+    text-indent: -9999px;
+}
+.swisstxt.white {
+    background: transparent url('/images/sponsors/STXT_MS_4f_neg.png') no-repeat top left;
+    width:128px;
     height:43px;
     float:left;
     margin-right: 0px;
