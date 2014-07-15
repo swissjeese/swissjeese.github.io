@@ -74,7 +74,7 @@ span.menu-tab {
     top:254px;
     left:0px;
     height:54px;
-    width:196px;
+    width:166px;
     float:left;
     display:block;
     border-radius:10px 10px 0 0;
@@ -86,8 +86,9 @@ span.menu-tab {
 }
 
 #menu1 {left:0;}
-#menu2 {left:205px;}
-#menu3 {left:410px;}
+#menu2 {left:175px;}
+#menu3 {left:350px;}
+#menu4 {left:525px;}
 
 span.menu-tab.selected {
     background:#f0e9e1;
@@ -147,7 +148,7 @@ h1 {
     font-size:36px;
 }
 
-div.event .title {
+.event .title {
     font-family: 'Oleo Script', cursive;
     color:#f09800;
     background: #000;
@@ -158,11 +159,11 @@ div.event .title {
     line-height:28px;
 }
 
-div.event .title a {
+.event .title a {
     color:#f09800;
 }
 
-div.event .title span.time {
+.event .title span.time {
     color:#fff;
     font-size:20px;
     font-family: Helvetica, Arial,  Sans-Serif;
@@ -170,39 +171,39 @@ div.event .title span.time {
     font-weight:bold;
 }
 
-div.event.simple .title {
+.event.simple .title {
     color:#000;
     background: #f09800;
 }
 
-div.event.simple .title span.time {
+.event.simple .title span.time {
     color:#000;
 }
 
-div.event div.speaker {
+.event div.speaker {
     padding:5px 20px;
     width:30%;
     float:left;
     font-size:10px;
 }
 
-div.event div.speaker img {
+.event div.speaker img {
     border:8px solid #000;
 }
 
-div.event div.talk,
-div.event div.description {
+.event div.talk,
+.event div.description {
     padding:5px 20px;
     line-height: 150%;
     color:#3f3a3b;
 }
 
-div.event div.talk {
+.event div.talk {
     width:60%;
     float:right;
 }
 
-div.event h2 {
+.event h2 {
     font-size:20px;
     font-weight:bold;
     margin:0 0 20px 0;
@@ -847,4 +848,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .strike {
     color: #BABABA;
+}
+
+.freshjobs-byline, .freshjobs-byline a {
+    font-style: italic;
+    font-weight: bold;
+}
+.freshjobs-link, .freshjobs-byline .freshjobs-link {
+    font-family: 'Oleo Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.freshjobs-link:hover, .freshjobs-byline .freshjobs-link:hover {
+    text-decoration: underline;
 }
