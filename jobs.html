@@ -100,35 +100,38 @@
 
         });
 
-        $.get('http://freshjobs.ch/job-category/frontend-jobs/feed/', function (data) {
-            var $jobsContainer = $('[data-jobs]');
-            $(data).find('item').each(function (index, item) {
-                var $item, $title, $description;
-                $item = $(item);
-                $title = $('<div class="event clearfix link"/>');
-                if (index % 2 === 0) {
-                    $title.addClass('simple')
-                }
+        $.ajax({
+            url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://freshjobs.ch/job-category/frontend-jobs/feed/'),
+            dataType: 'json',
+            success: function (data) {
+                var $jobsContainer = $('[data-jobs]');
+                $.each(data.responseData.feed.entries, function (index, item) {
+                    var $title, $description;
+                    $title = $('<div class="event clearfix link"/>');
+                    if (index % 2 === 0) {
+                        $title.addClass('simple')
+                    }
 
-                $title.append(
-                    $('<div class="title"/>')
-                        .text($item.find('title').text())
-                );
+                    $title.append(
+                        $('<div class="title"/>')
+                            .text(item.title)
+                    );
 
-                $description = $('<div/>').append(
-                    $($item.find('description').text())
-                );
-
-                $description.find('p:last-child')
-                    .addClass('freshjobs-byline')
-                    .find('a:last-child')
-                    .addClass('freshjobs-link');
-
-                console.log(item)
-                $jobsContainer.append($title, $description)
-            })
-
-        })
+                    $description = $('<div/>').append(
+                        $('<p>').text(item.contentSnippet)
+                    );
+                    $description.append(
+                        $('<p class="freshjobs-byline"/>')
+                            .text('Find out more on ')
+                            .append(
+                                $('<a class="freshjobs-link">Freshjobs</a>')
+                                    .attr('href', item.link)
+                            )
+                    );
+                    $jobsContainer.append($title, $description)
+                });
+            }
+        });
     </script>
 </body>
 
