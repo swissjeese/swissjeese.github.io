@@ -6,6 +6,7 @@
     <meta name="description" content="SwissJeese, the Swiss JS Day will take place in Bern on the 26th of July 2014">
     <link rel="stylesheet" type="text/css" href="css/unique.css" />
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet" type="text/css">
+
 </head>
 <body class="homepage">
 
@@ -18,11 +19,8 @@
         <span id="menu1" class="menu-tab"><a href="index.html">Tickets</a></span>
         <span id="menu2" class="menu-tab"><a href="schedule.html">Schedule</a></span>
         <span id="menu3" class="menu-tab"><a href="venue.html">Location</a></span>
-        <span id="menu4" class="menu-tab selected"><a href="jobs.html">Jobs</a></span>
+        <span id="menu4" class="menu-tab selected"><a class="freshjobs-tab" href="jobs.html">Freshjobs</a></span>
         <div id="content" class="shadow clearfix">
-            <h1>Jobs</h1>
-
-            <p>Job offers by <a class="freshjobs-link" href="http://www.freshjobs.ch">Freshjobs</a></p>
 
             <div data-jobs>
             </div>
@@ -106,16 +104,20 @@
             success: function (data) {
                 var $jobsContainer = $('[data-jobs]');
                 $.each(data.responseData.feed.entries, function (index, item) {
-                    var $title, $description;
+                    var $title, $titleContent, $description;
                     $title = $('<div class="event clearfix link"/>');
                     if (index % 2 === 0) {
                         $title.addClass('simple')
                     }
+                    $titleContent = $('<div class="title"/>')
+                        .text(item.title)
 
-                    $title.append(
-                        $('<div class="title"/>')
-                            .text(item.title)
-                    );
+                    if (index === 0) {
+                        $titleContent.css({
+                            'margin-top': 0
+                        })
+                    }
+                    $title.append($titleContent);
 
                     $description = $('<div/>').append(
                         $('<p>').text(item.contentSnippet)
@@ -133,6 +135,8 @@
             }
         });
     </script>
+    <script type="text/javascript" src="//use.typekit.net/rwq2jby.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 
 

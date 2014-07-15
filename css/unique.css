@@ -851,17 +851,41 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .freshjobs-byline, .freshjobs-byline a {
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: bold;
 }
-.freshjobs-link, .freshjobs-byline .freshjobs-link {
-    font-family: 'Oleo Script', cursive;
+.freshjobs-link,
+.freshjobs-link:visited,
+.freshjobs-byline .freshjobs-link,
+.freshjobs-byline .freshjobs-link:visited {
+    font-family: 'bello-pro', 'Oleo Script', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 1.3em;
     text-decoration: none;
+    color: #00A3DF;
 }
 
 .freshjobs-link:hover, .freshjobs-byline .freshjobs-link:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    color: #3F3A3B;
 }
+
+.wf-loading .freshjobs-tab,
+.wf-loading .freshjobs-link {
+    visibility: hidden;
+}
+.freshjobs-tab {
+    font-family: 'bello-pro', 'Oleo Script', cursive;
+    color: #000;
+}
+
+.freshjobs-tab:hover,
+.selected .freshjobs-tab:hover {
+    color: #3F3A3B;
+}
+
+.selected .freshjobs-tab {
+    color: #00A3DF;
+}
+
