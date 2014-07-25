@@ -285,9 +285,6 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
     padding: 0;
     color: #f09800;
 }
-.sponsors-top .freshjobs-link {
-	margin-left: 20px;
-}
 
 .sponsors-top > div {
     padding:0;
@@ -911,7 +908,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: #00A3DF;
 }
 
-#footer .freshjobs-link {
+#footer .freshjobs-link, .sponsors-top .freshjobs-link {
 	font-size: 2.5em;
 	margin-left: 20px;
 }
