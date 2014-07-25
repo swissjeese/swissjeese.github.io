@@ -276,13 +276,14 @@ p.sponsor-search {font-size:1.1em;padding-left:0;}
     margin:30px 20px 10px 0;
     padding:10px 20px 20px 20px;
     border-radius:5px;
-    background: #f09800;
+    background: #000;
 
 }
 .sponsors-top h1 {
     font-size:20px;
     margin:0 0 -2px 0;
     padding: 0;
+    color: #f09800;
 }
 
 .sponsors-top > div {
