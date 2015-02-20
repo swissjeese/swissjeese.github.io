@@ -1,0 +1,17 @@
+.negative {
+  color: $color-brand-inverted;
+  background-color: $color-brand;
+  text-align: center;
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+  }
+
+  a {
+    @include attention(true) {
+      color: $color-brand-inverted;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.hamburger {
+
+  @include media-query(lap-and-up) {
+    display: none;
+  }
+
+  $size: $inuit-base-spacing-unit;
+  $height: $size/1.4;
+  $color: $color-brand-inverted;
+  right: $size;
+  top: $size;
+  position: absolute;
+  width: $size;
+  height: $height;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: ($height/5);
+    background: $color;
+    box-shadow:
+      0 (2*$height/5) 0 0 $color,
+      0 (4*$height/5) 0 0 $color;
+  }
+}
+.hamburger__text {
+  @include visuallyhidden;
+}

@@ -1,0 +1,26 @@
+.navigation--lap-and-up {
+  .navigation__list {
+    display: none;
+    @include media-query(lap-and-up) {
+      display: block;
+      margin:  0;
+      padding: 0;
+      list-style: none;
+      > li {
+          display: inline-block;
+      }
+    }
+  }
+}
+
+.navigation--palm {
+  @include media-query(lap-and-up) {
+    display: none;
+  }
+  .navigation__list {
+    @extend %list-ui;
+  }
+  .navigation__list-item {
+    @extend %list-ui__item;
+  }
+}

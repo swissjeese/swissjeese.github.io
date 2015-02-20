@@ -1,0 +1,9 @@
+.logo__swiss {
+  @include font-weight(ultra-bold);
+  text-transform: lowercase;
+}
+.logo__js {
+  @include font-weight(thin);
+  text-transform: uppercase;
+  font-size: .738331735em;
+}

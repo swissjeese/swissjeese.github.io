@@ -1,0 +1,27 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title SwissJS 2015
+    meta(name='description', content='SwissJS, the Swiss JavaScript Conference in Bern on July 18th 2015')
+    link(rel='stylesheet', href='css/main.css')
+
+    //- link(href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700', rel='stylesheet', type='text/css')
+  body
+    .negative
+      a.hamburger(href="#navigation")
+        span.hamburger__text Menu
+      .wrapper
+        nav.navigation.navigation--lap-and-up
+          ul.navigation__list
+            include __navigation-items.jade
+
+
+    block content
+
+    footer
+      nav.navigation.navigation--palm#navigation
+        ul.navigation__list
+            include __navigation-items.jade
