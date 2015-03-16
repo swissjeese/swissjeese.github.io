@@ -1,20 +1,42 @@
 .twitter {
-  display: none;
-  left: $inuit-base-spacing-unit;
-  top: $inuit-base-spacing-unit;
-  position: absolute;
   width: 32px;
 }
-.twitter--landing {
-  display: block;
+
+a.twitter {
+  @include attention() {
+    .twitter__path {
+      fill: #00aced;
+    }
+  }
+}
+
+.twitter--navbar-landing,
+.twitter--navbar {
+  position: absolute;
+
+}
+
+.twitter--navbar-landing {
+  top: $inuit-base-spacing-unit;
+  left: $inuit-base-spacing-unit;
+
   @include media-query(lap-and-up) {
     display: none;
   }
 }
 
+.twitter--navbar {
+  top: 1.5 * $inuit-base-spacing-unit;
+  right: $inuit-base-spacing-unit;
+  display: none;
+
+  @include media-query(lap-and-up) {
+    display: block;
+  }
+}
 
 .twitter__path {
-  fill: white
+  fill: white;
 }
 
 .twitter__text {

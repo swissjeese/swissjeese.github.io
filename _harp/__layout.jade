@@ -16,11 +16,23 @@ html.no-js
       a.hamburger(href="#navigation")
         span.hamburger__text Menu
 
-      if !isLanding
-        a.navbar__logo-container(href="/")
-          h1.logo.logo--square
+      if isLanding
+        a.twitter.twitter--navbar-landing(
+          href="http://twitter.com/SwissJS",
+        )
+          span.twitter__text @SwissJS
+          include /_twitter.svg
+      else
+        a.logo.logo--navbar(href="/")
+          h1.logo__title
             span.logo__swiss Swiss
             span.logo__js JS
+        a.twitter.twitter--navbar(
+          href="http://twitter.com/SwissJS",
+        )
+          span.twitter__text @SwissJS
+          include /_twitter.svg
+
       nav.navigation.navigation--lap-and-up
         ul.navigation__list
           include __navigation-items.jade
@@ -31,9 +43,3 @@ html.no-js
       nav.navigation.navigation--palm#navigation
         ul.navigation__list
             include __navigation-items.jade
-      a.twitter(
-        hrer="http://twitter.com/SwissJS",
-        class=isLanding?"twitter--landing":""
-      )
-        span.twitter__text @SwissJS
-        include /_twitter.svg
