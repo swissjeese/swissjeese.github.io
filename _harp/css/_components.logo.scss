@@ -1,6 +1,9 @@
 .logo {
-  @include attention() {
-      text-decoration: none;
+  &,
+  .negative & {
+    @include attention(true) {
+        text-decoration: none;
+    }
   }
 }
 
@@ -12,6 +15,14 @@
   left: $inuit-base-spacing-unit;
   top: ($inuit-base-spacing-unit/2 - 1px);
   position: absolute;
+}
+
+.logo__title--header {
+  font-size: 1.354404738 * $font-size-1;
+  @include media-query(lap-and-up) {
+    font-size: 170px;
+    margin-top: -20px;
+  }
 }
 
 .logo__swiss {

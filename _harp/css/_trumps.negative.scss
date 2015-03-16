@@ -11,6 +11,7 @@
   a {
     @include attention(true) {
       color: $color-brand-inverted;
+      text-decoration: underline;
     }
   }
 }
