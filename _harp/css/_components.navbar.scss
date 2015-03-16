@@ -1,0 +1,14 @@
+.navbar {
+  text-align: right;
+  line-height: 0;
+  padding: $inuit-base-spacing-unit;
+}
+
+.navbar__logo-container {
+  @include attention() {
+      text-decoration: none;
+  }
+  left: $inuit-base-spacing-unit;
+  top: ($inuit-base-spacing-unit/2);
+  position: absolute;
+}

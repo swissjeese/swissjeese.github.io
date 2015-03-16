@@ -1,3 +1,4 @@
+-var isLanding = current.path[0] === 'index'
 doctype
 html.no-js
   head
@@ -9,15 +10,20 @@ html.no-js
     link(rel='stylesheet', href='css/main.css')
 
     //- link(href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700', rel='stylesheet', type='text/css')
+
   body
-    .negative
+    .negative.navbar
       a.hamburger(href="#navigation")
         span.hamburger__text Menu
-      .wrapper
-        nav.navigation.navigation--lap-and-up
-          ul.navigation__list
-            include __navigation-items.jade
 
+      if !isLanding
+        a.navbar__logo-container(href="/")
+          h1.logo.logo--square
+            span.logo__swiss Swiss
+            span.logo__js JS
+      nav.navigation.navigation--lap-and-up
+        ul.navigation__list
+          include __navigation-items.jade
 
     block content
 
@@ -25,3 +31,9 @@ html.no-js
       nav.navigation.navigation--palm#navigation
         ul.navigation__list
             include __navigation-items.jade
+      a.twitter(
+        hrer="http://twitter.com/SwissJS",
+        class=isLanding?"twitter--landing":""
+      )
+        span.twitter__text @SwissJS
+        include /_twitter.svg
