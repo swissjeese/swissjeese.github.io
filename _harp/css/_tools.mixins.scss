@@ -82,8 +82,9 @@
   $height: percentage(nth($ratio, 2) / nth($ratio, 1));
   &:before {
     content: '';
-    display: block;
-    width: $width;
+    display: inline-block;
+    margin-left: -1px;
+    width: 1px;
     height: 0;
     padding-bottom: $height;
   }

@@ -39,7 +39,35 @@ html.no-js
 
     block content
 
-    footer
-      nav.navigation.navigation--palm#navigation
-        ul.navigation__list
-            include __navigation-items.jade
+    nav.navigation.navigation--palm#navigation
+      ul.navigation__list
+          include __navigation-items.jade
+    footer.footer
+      .logo
+        .logo__title.logo__title--footer
+          span.logo__swiss Swiss
+          span.logo__js JS
+      .type__large
+        | Organised by 
+        a(href="http://twitter.com/ckuert") Christoph Kuert
+        | , 
+        a(href="http://twitter.com/shvi") Pierre Spring 
+        | and 
+        a(href="http://twitter.com/lejoe") Joel Bez
+        | .
+      p
+        | We are looking for companies that want to take advantage of the 
+        | visibilty of our event. 
+        br
+        | Check out our 
+        a(href="/sponsoring.html") packages 
+        | an email us at 
+        a(href="mailto:swissjsconf@gmail.com") swissjsconf@gmail.com 
+        | !
+      
+      a.twitter.twitter--footer(
+        href="http://twitter.com/SwissJS",
+      )
+        span.twitter__text @SwissJS
+        include /_twitter.svg
+    script(src="main.js")

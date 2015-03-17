@@ -39,9 +39,11 @@ $inuit-list-ui-border-color: $color-separator;
 @import "components.navbar";
 @import "components.twitter";
 @import "components.navigation";
+@import "components.video";
+@import "components.footer";
 
 // TRUMPS
 @import "trumps.negative";
 // @import "../bower_components/inuit-widths/trumps.widths";
-// @import "_scss/trumps.widths-responsive";
+@import "trumps.widths-responsive";
 // @import "_scss/trumps.visibility-responsive";

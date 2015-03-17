@@ -32,6 +32,10 @@ $font-size-4:  20px !default;
 $font-size-5:  16px !default;
 $font-size-6:  14px !default;
 
+.type__large {
+    @include inuit-font-size($font-size-3);
+}
+
 @include headings() {
     @include font-weight(ultra-bold);
 }

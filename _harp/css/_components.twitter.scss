@@ -1,5 +1,6 @@
 .twitter {
   width: 32px;
+  display: inline-block;
 }
 
 a.twitter {
@@ -37,6 +38,11 @@ a.twitter {
 
 .twitter__path {
   fill: white;
+}
+.twitter--footer {
+  .twitter__path {
+    fill: $color-brand;
+  }
 }
 
 .twitter__text {

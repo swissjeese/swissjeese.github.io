@@ -4,3 +4,10 @@ html {
   font-family: 'Roboto', sans-serif;
   @include font-weight(light);
 }
+
+hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: $color-separator;
+}
