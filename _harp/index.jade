@@ -9,40 +9,38 @@ block content
           span.logo__js JS
       p.header__intro.header__aditional
         | SwissJeese is now 
-        span.logo
-          span.logo__title
-            span.logo__swiss Swiss
-            span.logo__js JS
+        +logo({modifier: "inline"})
         | . Appart from the name, nothing has changed! 
         | The conference remains the main event for Swiss JavaScript 
         | developers to meet and socialize.
-      p.header__intro
+      p.header__date-location
         | July 18th 2015 in Bern
         span.header__aditional .
         
       a.header__tickets-link(href="#tickets")
         | Get your ticket
   .wrapper
-    .layout
-      .layout__item.lap-and-up-one-half
-        .video__description-container
-          .video__description
-            .video__description-content
-              h2.beta.video__description-title 
-                | Impressions of 2014
-              p
-                | Last year, over 200 people attended the talks.
-                br
-                | If you feel like sponsoring the event, 
-                a(href="/sponsoring.html") let us know
-                | !
-              
+    .box.box--lap-and-up-larger-vertical-spacing
+      .layout.layout--no-gutter
+        .layout__item.lap-and-up-one-half
+            .video__description-container
+              .video__description
+                .video__description-content
+                  h2.beta.video__description-title 
+                    | Impressions of 2014
+                  p
+                    | Last year, over 200 people attended the talks.
+                    br
+                    | If you feel like sponsoring the event, 
+                    a(href="/sponsoring.html") let us know
+                    | !
                 
-      .layout__item.lap-and-up-one-half
-        .video
-          a.video__teaser(href="#play-video", data-play)
-          video.video__player(controls)
-            source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
+                  
+        .layout__item.lap-and-up-one-half
+          .video
+            a.video__teaser(href="#play-video", data-play)
+            video.video__player(controls)
+              source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
   hr
 
   //- Twitter Quotes sections section

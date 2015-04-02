@@ -2,7 +2,8 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  @include font-weight(light);
+  @include font-weight("normal");
+  color: #666
 }
 
 hr {

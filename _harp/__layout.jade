@@ -1,4 +1,5 @@
 -var isLanding = current.path[0] === 'index'
+include /_logo
 doctype
 html.no-js
   head
@@ -13,7 +14,7 @@ html.no-js
 
   body
     .negative.navbar
-      a.hamburger(href="#navigation")
+      a.hamburger(href="#navigation", data-menu)
         span.hamburger__text Menu
 
       if isLanding
@@ -23,10 +24,12 @@ html.no-js
           span.twitter__text @SwissJS
           include /_twitter.svg
       else
-        a.logo.logo--navbar(href="/")
-          h1.logo__title
-            span.logo__swiss Swiss
-            span.logo__js JS
+        +logo({
+          modifier: "navbar", 
+          titleTag: "h1", 
+          href: "/"
+        })
+                
         a.twitter.twitter--navbar(
           href="http://twitter.com/SwissJS",
         )
@@ -43,11 +46,9 @@ html.no-js
       ul.navigation__list
           include __navigation-items.jade
     footer.footer
-      .logo
-        .logo__title.logo__title--footer
-          span.logo__swiss Swiss
-          span.logo__js JS
-      .type__large
+      +logo({modifier: "footer"})
+      
+      .type__large.footer__organized-by
         | Organised by 
         a(href="http://twitter.com/ckuert") Christoph Kuert
         | , 

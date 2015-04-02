@@ -1,7 +1,6 @@
 .video {
   @include ratio(16 9);
   position: relative;
-  margin-bottom: $inuit-base-spacing-unit*2;
 }
 .video__teaser {
   background-color: black;
@@ -23,8 +22,6 @@
 @include media-query(lap-and-up) {
   .video__description-container,
   .video {
-    margin-top: $inuit-base-spacing-unit*3;
-    margin-bottom: $inuit-base-spacing-unit*3;
   }
   .video__description-container {
     position: relative;

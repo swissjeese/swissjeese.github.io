@@ -1,6 +1,6 @@
 .navigation--lap-and-up {
   @extend .box;
-  @include font-weight(normal);
+  @include font-weight("normal");
   text-transform: uppercase;
   display: none;
   text-align: center;

@@ -8,14 +8,26 @@
   padding: 0 $inuit-base-spacing-unit $inuit-base-spacing-unit $inuit-base-spacing-unit;
 }
 
-.header__intro {
-  @include font-weight('medium');
+.header__intro, .header__date-location {
+  @include font-weight("medium");
   @include media-query(lap-and-up) {
-    @include font-weight('light');
     font-size: 24px;
   }
-  // @include inuit-font-size($font-size-3);
-  // @include font-weight(thin);
+}
+
+.header__intro {
+  @include media-query(lap-and-up) {
+    @include font-weight("light");
+  }
+}
+
+.header__date-location {
+  @include font-weight("thin");
+  font-size: 33px;
+
+  @include media-query(lap-and-up) {
+    font-size: 65px;
+  }
 }
 
 .header__aditional {

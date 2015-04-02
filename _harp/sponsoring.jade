@@ -1,6 +1,83 @@
 extend __layout.jade
 
 block content
-  .wrapper
-    h1 sponsoring
-    p Lorem ipsum dolor sit amet dui nulla, convallis nisl, a libero purus vitae est et tortor. Morbi sem condimentum velit. Nulla massa. Nunc viverra sodales. Vivamus metus eleifend in, commodo wisi. Morbi sit amet enim. Duis luctus a, bibendum eget, tincidunt congue. Donec pharetra sem tincidunt turpis et risus pede, at arcu. Nam suscipit, velit odio et justo. Donec porttitor auctor, ante ipsum et magnis dis parturient montes, nascetur ridiculus mus. Nunc varius vehicula. Aliquam interdum viverra. Proin volutpat elit, dictum sed, pretium pellentesque. Proin in est et velit. Mauris imperdiet felis, eleifend ac, tincidunt lorem. Suspendisse quis nisl. Vestibulum ligula. Nam consectetuer lacus. Aliquam eget magna. Vestibulum laoreet viverra. Cras faucibus orci ut quam. Mauris at diam ut diam. In purus at quam elit laoreet condimentum, pulvinar velit. Mauris et lectus. Vivamus fermentum pede, nec diam ut leo sit amet augue ut viverra accumsan. Proin imperdiet aliquam enim sit amet, consectetuer sagittis ac, semper id, justo. Pellentesque ante. Proin at eros. Curabitur interdum. Donec a augue eget dolor urna, egestas ve
+
+  .wrapper.wrapper--narrow
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      +logo({
+        titleTag: "h1", 
+      })
+
+      h2.gamma The Swiss JavaScript community event
+      
+      p SwissJS is a <strong>one day, one track JavaScript conference</strong> organized for the
+        | community by the community. Members of all Swiss JavaScript user groups 
+        | will either speak or attend this event.
+      p SwissJeese is the only event that gets all the leading Swiss JavaScript 
+        | developers into a room for an entire day. It is where they finally get
+        | to meet in person.
+      p After the initial success of the first event in 2012, the 2014 edition
+        | of SwissJS turned into an extraordinary event with <strong>over 200 attendees</strong>
+        | from all over Switzerland and six talks by local developers.
+
+    hr
+  
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      h2.gamma SwissJS 2015
+      
+      p SwissJS 2015 is <strong>highly anticipated</strong> by the community. 
+        | The positive feedback from 2012 and 2014 lead to the sale <strong>more than 100
+        | tickets within a week's time.</strong>
+      p SwissJS remains <strong>limited to 200 seats</strong> in order to 
+        | <strong>keep the spirit of the community event.</strong>
+      p It will take place in Bern on Saturday, <strong>July 18th 2015.</strong>
+      
+    hr
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      h1.gamma Sponsors
+      
+      p As a sponsor of SwissJeese you reach pretty much <strong>all of the 
+        | who-is-who in the Swiss JavaScript community.</strong> While the event
+        | is limited to a single day for 200 people, experience show that it will 
+        | resonate throughout social media for several weeks.
+      p Sponsors will be shown on the projector between talks and 
+        | <strong>regularly mentioned by the MC</strong> of the event.
+      p In order to add a bit of viral after-marketing, SwissJeese will release 
+        | a <strong>professionally shot video</strong> of the event, capturing 
+        | the mood rather than the content. <strong>Sponsors will be thanked in 
+        | the video too.</strong>
+      
+    
+  .wrapper.negative.negative--arrow
+    .wrapper.wrapper--narrow
+      .box.box--lap-and-up-larger-vertical-spacing.content
+        h2 2 x Main-Sponsor CHF 2500
+        p As a main sponsor either sponsor either lunch or the drinks after the event.
+        ul
+          li Sponsoring of the catering
+          li Big logo and link on website
+          li A <strong>full slide</strong> on the slideshow between the talks
+          li Mentioned in tweets by @swissjeese
+          li Displayed in the video which will be produced during the event
+          li 5 tickets
+      hr
+      .box.box--lap-and-up-larger-vertical-spacing.content
+        h2 4 x Co-Sponsor CHF 1000
+        ul
+          li Small logo and link on website
+          li Logo on the co-sponsor slide on the slideshow between the talks
+          li Displayed in the video which will be produced during the event
+          li 2 tickets
+
+      hr
+      .wrapper.wrapper--super-narrow
+        .box.box--lap-and-up-larger-vertical-spacing.content
+          h2 Other opportunities
+          p We have few more idea on how we could improve the event. Let us know 
+            | if you are interested to work with us to prepare a something special and sponsor it.
+
+  .box.box--lap-and-up-larger-vertical-spacing.content.content--all-centered
+    p Email us at 
+      a(href="mailto:swissjsconf@gmail.com") swissjsconf@gmail.com 
+      | to get in touch!
+  hr

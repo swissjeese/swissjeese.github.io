@@ -1,0 +1,22 @@
+mixin logo(options)
+
+  - var titleTagName, logoTagName, mainClass, titleClass, swissClass, jsClass
+  - if (!options) {options = {};}
+  - titleTagName = options.titleTag || 'div'
+  - logoTagName = 'div'
+  - if (options.modifier === 'inline') {
+  -   titleTagName = 'span'
+  -   logoTagName = 'span'
+  - }
+  - if (options.href) {
+  -   logoTagName = 'a'
+  - }
+  - mainClass = options.modifier ? 'logo--' + options.modifier : ''
+  - titleClass = options.modifier ? 'logo__title--' + options.modifier : ''
+  - swissClass = options.modifier ? 'logo__swiss--' + options.modifier : ''
+  - jsClass = options.modifier ? 'logo__js--' + options.modifier : ''
+  
+  #{logoTagName}.logo(class=mainClass)(href=options.href)
+    #{titleTagName}.logo__title(class=titleClass)
+      span.logo__swiss(class=swissClass) Swiss
+      span.logo__js(class=jsClass) JS

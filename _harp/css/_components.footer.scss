@@ -2,3 +2,8 @@
   @extend .header__box;
   text-align: center;
 }
+
+.footer__organized-by {
+  @include font-weight("light");
+  color: black;
+}

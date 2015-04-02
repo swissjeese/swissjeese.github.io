@@ -7,6 +7,14 @@
   }
 }
 
+.logo--inline {
+  display: inline;
+}
+
+.logo__title--inline {
+  display: inline;
+}
+
 .logo__title {
   margin: 0;
 }
@@ -32,11 +40,11 @@
 }
 
 .logo__swiss {
-  @include font-weight(ultra-bold);
+  @include font-weight("ultra-bold");
   text-transform: lowercase;
 }
 .logo__js {
-  @include font-weight(thin);
+  @include font-weight("thin");
   text-transform: uppercase;
   font-size: .738331735em;
 }

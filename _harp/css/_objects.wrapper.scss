@@ -1,6 +1,11 @@
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding-right: $inuit-base-spacing-unit;
-  padding-left:  $inuit-base-spacing-unit;
+}
+.wrapper--narrow {
+  max-width: 860px;
+}
+
+.wrapper--super-narrow {
+  max-width: 600px;
 }
