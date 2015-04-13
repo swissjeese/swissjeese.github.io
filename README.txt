@@ -12,5 +12,9 @@ The website uses [harp](http://harpjs.com/) as a static website generator.
     browser-sync start --proxy 'localhost:9000' --files './**'
 
 ## Deploy
+    
+    cd _harp
+    harp compile . ../
 
-Follow the [harp guide](http://harpjs.com/docs/deployment/github-pages) to deploy.
+Then commit the changes and push to the master.
+For more infos see: the [harp guide](http://harpjs.com/docs/deployment/github-pages).

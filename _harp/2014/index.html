@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SwissJeese 2014 - In Bern on the 26th of July</title>
+    <meta name="description" content="SwissJeese, the Swiss JS Day will take place in Bern on the 26th of July 2014">
+    <link rel="stylesheet" type="text/css" href="css/unique.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet" type="text/css">
+</head>
+<body class="homepage">
+
+    <div id="page" class="clearfix">
+        <a id="event2012" href="2012/index.html" target="_blank">SJ 2012</a>
+        <a id="buyticket" href="https://www.eventbrite.com/e/swissjeese-2014-tickets-10539402637" target="_blank" class="">Buy your ticket!</a>
+        <a id="follow_twitter" href="https://twitter.com/swissjeese" target="_blank">Follow @SwissJeese on Twitter</a>
+        <a id="swissjeese-logo" href="/" title="SwissJeese, the Swiss JS Day will take place in Bern on the 26th of July 2014">SwissJeese, the Swiss JS Day will take place in Bern on the 26th of July 2014</a>
+        <div id="bear" class="bear"></div>
+
+        <span id="menu1" class="menu-tab selected"><a href="index.html">Tickets</a></span>
+        <span id="menu2" class="menu-tab"><a href="schedule.html">Schedule</a></span>
+        <span id="menu3" class="menu-tab"><a href="venue.html">Location</a></span>
+        <span id="menu4" class="menu-tab"><a class="freshjobs-tab" href="jobs.html">Freshjobs</a></span>
+        <div id="content" class="shadow clearfix">
+            <h1>A Swiss JavaScript conference for &amp; by the community.</h1>
+
+            <p>After a successful first edition, this year's event will take place on <strong>July 26th 2014</strong> at the <a href="venue.html">PROGR in Bern</a>.</p>
+
+            <div class="event clearfix">
+                <div class="title">Buy your ticket</a></div>
+            </div>
+
+            <div class="clearfix venue">
+                <!-- <p>Early bird tickets cost only CHF 25.- but are limited. Buy yours now to make sure you don't miss the event:</p> -->
+                <!-- here comes the eventbrite embed -->
+                <div style="width:95%; text-align:left; padding-left:20px;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=10539402637&ref=etckt" frameborder="0" height="302" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div>
+                <!-- end of eventbrite embed -->
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="footer" class="clearfix">
+        <div class="content">
+            <div class="left">
+                <h1>Website designed by</h1>
+                <a href="http://www.relaxintheair.com" class="logo_relaxintheair" target="_blank">Relax in the Air</a>
+                <br>
+                <h1>Organised by</h1>
+                <p class="copyright"><a href="https://twitter.com/ckuert">Christoph Kuert</a>, <a href="https://twitter.com/shvi">Pierre Spring</a> and <a href="https://twitter.com/lejoe">Joel Bez</a></p>
+            </div>
+            <div class="right">
+                <h1>Main-Sponsors</h1>
+                <div class="clearfix" style="padding: 10px 20px 20px 0;">
+                    <a class="sensational white" href="http://www.sensational.ch/" target="_blank">Sponsored by sensational</a>
+                    <a class="ginetta white" href="http://ginetta.net/" target="_blank">Sponsored by Ginetta</a>
+                </div>
+                <h1>Co-Sponsors</h1>
+                <div class="clearfix" style="padding: 10px 20px 20px 0;">
+                    <a class="swisstxt white" href="http://ms.swisstxt.ch/" target="_blank">Sponsored by SwissTXT Multimedia Solutions</a>
+                    <a class="freshjobs-link" href="http://freshjobs.ch" target="_blank">Freshjobs</a>
+                </div>
+                <p class="sponsor-search">We are looking for companies that want to take advantage of the visibilty of our event. Check out our <a href="sponsoring.html">packages</a> an email us at <a href="mailto:swissjeese@gmail.com">swissjeese@gmail.com</a>!</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-48019754-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+          <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+        <![endif]-->
+    <script type="text/javascript">
+
+        function applyAnim(that, x) {
+            $(that).removeClass().addClass(x);
+            var wait = window.setTimeout(function () {
+                $(that).removeClass()
+            }, 1300
+        );
+        }
+
+
+        jQuery(document).ready(function () {
+
+            $('#swissjeese-logo').on('mouseover', function () {
+                applyAnim(this, 'swing');
+            });
+
+            $('#bear').on('mouseover', function () {
+                applyAnim(this, 'wobble');
+            });
+
+            $('#freeticket').on('mouseover', function () {
+                applyAnim(this, 'shake');
+            });
+
+            $('#follow_twitter').on('mouseover', function () {
+                applyAnim(this, 'bounce');
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="//use.typekit.net/rwq2jby.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+
+
+</html>
