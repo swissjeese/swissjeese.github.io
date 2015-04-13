@@ -1,0 +1,144 @@
+/*
+
+__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\__/\\\\\\\\\\\\\\\_______/\\\\\___________________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
+ _\///////\\\/////__\/////\\\///__\///////\\\/////______/\\\///\\\______________/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
+  _______\/\\\___________\/\\\___________\/\\\_________/\\\/__\///\\\__________/\\\/____________\//\\\______\///___\//\\\______\///__      
+   _______\/\\\___________\/\\\___________\/\\\________/\\\______\//\\\________/\\\_______________\////\\\___________\////\\\_________     
+    _______\/\\\___________\/\\\___________\/\\\_______\/\\\_______\/\\\_______\/\\\__________________\////\\\___________\////\\\______    
+     _______\/\\\___________\/\\\___________\/\\\_______\//\\\______/\\\________\//\\\____________________\////\\\___________\////\\\___   
+      _______\/\\\___________\/\\\___________\/\\\________\///\\\__/\\\___________\///\\\___________/\\\______\//\\\___/\\\______\//\\\__  
+       _______\/\\\________/\\\\\\\\\\\_______\/\\\__________\///\\\\\/______/\\\____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
+        _______\///________\///////////________\///_____________\/////_______\///________\/////////____\///////////_______\///////////_____
+
+
+Basic styles for the Tito widget: use and abuse.
+
+Docs are here: http://beta.tito.io/docs/widget
+
+Ping us at support@tito.io if you need any help.
+
+Have fun.
+
+*/
+
+* {
+    box-sizing: border-box
+}
+.tito-wrapper {
+    $size: 50px;
+    $ticket-bg: #ffcc00;
+    $ticket-padding: 33px;
+    
+    padding: 0 $ticket-padding;
+    @include media-query(lap-and-up) {
+      padding: $ticket-padding;
+    }
+
+    background: $ticket-bg;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: $size;
+      width: $size;
+      margin-top: -($size/2);
+      background: white;
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+    } 
+    &:before {
+      left: -($size/2);
+    }
+    &:after {
+      right: -($size/2);
+    }
+}
+
+
+
+.tito-ticket-list {
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 50px;
+  width: 100%;
+
+  @include media-query(lap-and-up) {
+    display: table;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.tito-ticket {
+    display: table-row;
+}
+
+.tito-ticket-name-wrapper {
+    @include media-query(lap-and-up) {
+      border-bottom: 1px solid $color-brand-inverted;
+      display: table-cell;
+      vertical-align: top;
+      padding-bottom: 30px;
+    }
+    
+}
+.tito-ticket-name {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tito-ticket-price-quantity-wrapper, .tito-ticket-status, .tito-ticket-status-sold-out {
+    @include media-query(lap-and-up) {
+      width: 33%;
+      display: table-cell;
+      vertical-align: top;
+    }
+    padding-bottom: 30px;
+}
+
+.tito-ticket-name-wrapper, 
+.tito-ticket-price-quantity-wrapper {
+  @include media-query(lap-and-up) {
+    padding-bottom: 0;
+    padding-top: 30px;
+    vertical-align: bottom;
+  }
+}
+
+.tito-ticket-price, .tito-ticket-quantity, .tito-ticket-upcoming-explanation-wrapper {
+    display: inline-block;
+}
+
+
+.tito-ticket-upcoming-price {
+  font-style: normal;
+}
+
+.tito-submit-wrapper {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include media-query(lap-and-up) {
+    border-left: 1px dashed $color-brand-inverted;
+    height: 100%;
+  }
+  
+  
+}
+.tito-submit {
+  position: absolute;
+  bottom: 10%;
+  @include media-query(lap-and-up) {
+    left: 10%;
+  }
+  
+}
+
+.tito-badge-link {
+    display: none;
+}

@@ -26,7 +26,7 @@
 // OBJECTS
 @import "../bower_components/inuit-layout/objects.layout";
 @import "objects.layout";
-/* $inuit-enable-box--large: true; */
+$inuit-enable-box--huge:    true;
 @import "../bower_components/inuit-box/objects.box";
 @import "objects.box";
 $inuit-list-ui-border-color: $color-separator;
@@ -40,6 +40,7 @@ $inuit-list-ui-border-color: $color-separator;
 @import "components.logo";
 @import "components.hamburger";
 @import "components.navbar";
+@import "components.tickets";
 @import "components.twitter";
 @import "components.tweets";
 @import "components.navigation";
