@@ -12,7 +12,7 @@
   right: 0;
   opacity: 1;
   transition: opacity 1s;
-  background-image: url('/media/video-teaser.jpg');
+  background-image: url('../media/video-teaser.jpg');
   background-size: cover;
   &[data-playing] {
     opacity: 0;
