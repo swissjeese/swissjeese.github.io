@@ -1,0 +1,68 @@
+.logo {
+  &,
+  .negative & {
+    @include attention(true) {
+        text-decoration: none;
+    }
+  }
+}
+
+.logo--inline {
+  display: inline;
+}
+
+.logo__title--inline {
+  display: inline;
+}
+
+.logo__title {
+  margin: 0;
+}
+
+.logo--navbar {
+  left: $inuit-base-spacing-unit;
+  top: ($inuit-base-spacing-unit/2 - 1px);
+  position: absolute;
+}
+.logo__title--footer,
+.logo__title--header {
+  font-size: 68px;
+}
+.logo__title--footer {
+  color: $color-brand;
+}
+
+.logo__title--header {
+  @include media-query(lap-and-up) {
+    font-size: 170px;
+    margin-top: -20px;
+  }
+}
+
+.logo__swiss {
+  @include font-weight("ultra-bold");
+  text-transform: lowercase;
+}
+.logo__js {
+  @include font-weight("thin");
+  text-transform: uppercase;
+  font-size: .738331735em;
+}
+
+@include media-query(lap-and-up) {
+  // Make logo square in the navbar
+  .logo--navbar {
+    .logo__title  {
+      text-align: right;
+      width: 2.7em;
+    }
+    .logo__swiss,
+    .logo__js {
+      display: block;
+      margin-right: .07525em;
+    }
+    .logo__swiss {
+      margin-bottom: -.4em;
+    }
+  }
+}

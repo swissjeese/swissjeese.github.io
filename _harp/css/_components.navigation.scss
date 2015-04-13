@@ -1,0 +1,29 @@
+.navigation--lap-and-up {
+  @extend .box;
+  @include font-weight("normal");
+  text-transform: uppercase;
+  display: none;
+  text-align: center;
+
+  @include media-query(lap-and-up) {
+    display: block;
+  }
+  .navigation__list {
+    @extend %list-inline;
+  }
+  .navigation__list-item {
+    margin: 0 ($inuit-base-spacing-unit / 2);
+  }
+}
+
+.navigation--palm {
+  @include media-query(lap-and-up) {
+    display: none;
+  }
+  .navigation__list {
+    @extend %list-ui;
+  }
+  .navigation__list-item {
+    @extend %list-ui__item;
+  }
+}

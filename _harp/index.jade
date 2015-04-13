@@ -1,0 +1,85 @@
+extend __layout.jade
+
+block content
+  .header.negative
+    .header__box
+      .logo.header__logo
+        h1.logo__title.logo__title--header
+          span.logo__swiss Swiss
+          span.logo__js JS
+      p.header__intro.header__aditional
+        | SwissJeese is now 
+        +logo({modifier: "inline"})
+        | . Appart from the name, nothing has changed! 
+        | The conference remains the main event for Swiss JavaScript 
+        | developers to meet and socialize.
+      p.header__date-location
+        | July 18th 2015 in Bern
+        span.header__aditional .
+        
+      a.header__tickets-link(href="#tickets")
+        | Get your ticket
+  .wrapper
+    .box.box--lap-and-up-larger-vertical-spacing
+      .layout.layout--no-gutter
+        .layout__item.lap-and-up-one-half
+            .video__description-container
+              .video__description
+                .video__description-content
+                  h2.beta.video__description-title 
+                    | Impressions of 2014
+                  p
+                    | Last year, over 150 people attended the talks.
+                    br
+                    | If you feel like sponsoring the event, 
+                    a(href="/sponsoring.html") let us know
+                    | !
+                
+                  
+        .layout__item.lap-and-up-one-half
+          .video
+            a.video__teaser(href="#play-video", data-play)
+            video.video__player(controls)
+              source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
+
+    .box.box--lap-and-up-larger-vertical-spacing
+      .layout.layout--no-gutter
+        .layout__item.lap-and-up-one-whole
+          h2.beta.tweets-title 
+            | What they tweeted
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/peitor/status/493062061162004481
+          <blockquote class="tweets-tweet" lang="en"><p>Thanks <a href="https://twitter.com/swissjeese">@SwissJeese</a> for organizing such a mother-flipping conference! The Swiss JS community rocks!! <a href="https://twitter.com/hashtag/swissJeese?src=hash">#swissJeese</a></p>&mdash; Peter Gfader (@peitor) <a href="https://twitter.com/peitor/status/493062061162004481">July 26, 2014</a></blockquote>
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/g33konaut/status/493076685508853760
+          <blockquote class="tweets-tweet" lang="en"><p>Awesome conference. Great audience, welcoming community and local flavours - <a href="https://twitter.com/swissjeese">@SwissJeese</a> is something the <a href="https://twitter.com/hashtag/js?src=hash">#js</a> community needs to watch!</p>&mdash; Martin Naumann (@g33konaut) <a href="https://twitter.com/g33konaut/status/493076685508853760">July 26, 2014</a></blockquote>
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/ikr/status/493135295370784769
+          <blockquote class="tweets-tweet" lang="en"><p>Holy shit, I had a blast today at <a href="https://twitter.com/hashtag/swissjeese?src=hash">#swissjeese</a> Felt like a big happy family reunion. Thank you all so very much! I&#39;m happy to know you.</p>&mdash; Ivan Krechetov (@ikr) <a href="https://twitter.com/ikr/status/493135295370784769">July 26, 2014</a></blockquote>
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/michellesanver/status/493120850393325568
+          <blockquote class="tweets-tweet" lang="en"><p>So <a href="https://twitter.com/swissjeese">@SwissJeese</a> was my first JS conference. I&#39;m super inspired! Met new amazing people. Can&#39;t wait to work on all the cool things! Thanks :)</p>&mdash; Michelle (@michellesanver) <a href="https://twitter.com/michellesanver/status/493120850393325568">July 26, 2014</a></blockquote>
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/marcbaechinger/status/493109544084848640
+          <blockquote class="tweets-tweet" lang="en"><p><a href="https://twitter.com/swissjeese">@SwissJeese</a> was a super-fresh conference. I&#39;m sure I&#39;ll be there in a year again. Many thx to all who made it happen.</p>&mdash; Marc Bächinger (@marcbaechinger) <a href="https://twitter.com/marcbaechinger/status/493109544084848640">July 26, 2014</a></blockquote>
+
+
+        .layout__item.lap-and-up-one-third
+          //- https://twitter.com/featureenvy/status/493106904387043328
+          <blockquote class="tweets-tweet" lang="en" ><p>If there will be a <a href="https://twitter.com/swissjeese">@SwissJeese</a> next year you owe it yourself to be there. What an amazing conference!</p>&mdash; Andreas Arnold (@featureenvy) <a href="https://twitter.com/featureenvy/status/493106904387043328">July 26, 2014</a></blockquote>
+
+
+
+    #tickets.box.box--lap-and-up-larger-vertical-spacing
+      .layout.layout--no-gutter
+        .layout__item.lap-and-up-one-whole
+          div
+            tito-widget(event="swissjs/2015")
+
+
+

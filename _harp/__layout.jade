@@ -1,0 +1,78 @@
+-var isLanding = current.path[0] === 'index'
+include /_logo
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title SwissJS 2015
+    meta(name='description', content='SwissJS, the Swiss JavaScript Conference in Bern on July 18th 2015')
+    link(rel='stylesheet', href='css/main.css')
+
+    script(src='https://js.tito.io/v1', async)
+      
+    //- link(href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700', rel='stylesheet', type='text/css')
+
+  body
+    .negative.navbar
+      a.hamburger(href="#navigation", data-menu)
+        span.hamburger__text Menu
+
+      if isLanding
+        a.twitter.twitter--navbar-landing(
+          href="http://twitter.com/SwissJS",
+        )
+          span.twitter__text @SwissJS
+          include /_twitter.svg
+      else
+        +logo({
+          modifier: "navbar", 
+          titleTag: "h1", 
+          href: "/"
+        })
+                
+        a.twitter.twitter--navbar(
+          href="http://twitter.com/SwissJS",
+        )
+          span.twitter__text @SwissJS
+          include /_twitter.svg
+
+      nav.navigation.navigation--lap-and-up
+        ul.navigation__list
+          include __navigation-items.jade
+
+    block content
+
+    hr
+
+    nav.navigation.navigation--palm#navigation
+      ul.navigation__list
+          include __navigation-items.jade
+    footer.footer
+      +logo({modifier: "footer"})
+      
+      .type__large.footer__organized-by
+        | Organised by 
+        a(href="http://twitter.com/ckuert") Christoph Kuert
+        | , 
+        a(href="http://twitter.com/shvi") Pierre Spring 
+        | and 
+        a(href="http://twitter.com/lejoe") Joel Bez
+        | .
+      p
+        | We are looking for companies that want to take advantage of the 
+        | visibilty of our event. 
+        br
+        | Check out our 
+        a(href="/sponsoring.html") packages 
+        | an email us at 
+        a(href="mailto:swissjsconf@gmail.com") swissjsconf@gmail.com 
+        | !
+      
+      a.twitter.twitter--footer(
+        href="http://twitter.com/SwissJS",
+      )
+        span.twitter__text @SwissJS
+        include /_twitter.svg
+    script(src="main.js")

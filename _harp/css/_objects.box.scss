@@ -1,0 +1,6 @@
+.box--lap-and-up-larger-vertical-spacing {
+  @include media-query(lap-and-up) {
+    padding-top: $inuit-box-padding--huge;
+    padding-bottom: $inuit-box-padding--huge;
+  }
+}

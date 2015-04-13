@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,400,100,300,900);
+
+html {
+  font-family: 'Roboto', sans-serif;
+  @include font-weight("normal");
+  color: #666
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: $color-separator;
+}

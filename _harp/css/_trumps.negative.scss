@@ -1,0 +1,45 @@
+.negative {
+  @include font-weight('light');
+
+  color: $color-brand-inverted;
+  background-color: $color-brand;
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+  }
+
+  a {
+    @include attention(true) {
+      color: $color-brand-inverted;
+      text-decoration: underline;
+    }
+  }
+
+  strong {
+    color: $color-brand-inverted;
+    @include font-weight('ultra-bold')
+  }
+
+  @include headings() {
+    color: $color-brand-inverted;
+  }
+}
+
+.negative--arrow {
+  position: relative;
+  &:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 15px $color-brand;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+  }
+}

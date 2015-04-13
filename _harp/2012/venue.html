@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SwissJeese 2012 - In Bern on the 2nd of June</title>
+    <meta name="description" content="SwissJeese, the first Swiss JS Day will take place in Bern on the 2nd of June 2012, from 10:00 AM. Let's meet !">
+    <link rel="stylesheet" type="text/css" href="css/unique.css" />
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet" type="text/css">
+</head>
+<body class="homepage">
+
+    <div id="page" class="clearfix">
+        <a id="freeticket" href="http://swissjee.se/KEKHXL" target="_blank">Free tickets</a>
+        <a id="follow_twitter" href="https://twitter.com/swissjeese" target="_blank">Follow @SwissJeese on Twitter</a>
+        <a id="swissjeese-logo" href="/" title="SwissJeese, the first Swiss JS Day will take place in Bern on the 2nd of June 2012, from 10:00 AM. Let's meet !">SwissJeese, the first Swiss JS Day will take place in Bern on the 2nd of June 2012, from 10:00 AM. Let's meet !</a>
+        <div id="bear" class="bear"></div>
+        <span id="menu1" class="menu-tab "><a href="index.html">What and when?</a></span>
+        <span id="menu2" class="menu-tab selected"><a href="#venue">Where ?</a></span>
+        <span id="menu3" class="menu-tab off"><a href="#">Who ?</a></span>
+        <div id="content" class="shadow clearfix">
+            <h1>"In JavaScript we trust"</h1>
+            <p>SwissJeese is a Swiss JavaScript Community event, a one day conference with talks around our beloved JS, for and by locals. The event will take place on <strong>June 2nd 2012 from 10:00 AM to 08:00 PM</strong> at the <a href="venue.html">PROGR in Bern</a>. The conference is limited to 200 people, so go ahead and <a href="http://swissjee.se/KEKHXL" target="_blank">get your tickets now on eventbrite</a>.</p>
+            <p>Depending on the sponsorship situation, there will be free catering. If you feel like sponsoring the event, <a href="mailto:pierre@nelm.io">let us know</a>!</p>
+            <div class="sponsors-top">
+                <h1>Event sponsored by</h1>
+                <div class="clearfix">
+                    <a class="webdoc black" href="http://www.webdoc.com/" target="_blank">Sponsored by Webdoc, as the most expressive way to share, Webdoc enables you to create rich media posts in seconds</a>
+                    <a class="nelmio black" href="http://nelm.io/" target="_blank">Sponsored by Nelm.io, the swiss company specialized in building modern web applications</a>
+                </div>
+            </div>
+            <div class="event clearfix">
+                <div class="title">Stiftung Progr (<a href="http://progr.ch/" target="_blank">www.progr.ch</a>)</div>
+            </div>
+            <div class="clearfix venue">
+                <div class="left">
+                    <p>
+                        <strong>Zentrum für Kulturproduktion</strong><br />
+                        Waisenhausplatz 30<br />
+                        3011 Bern<br />
+                    </p>
+                </div>
+                <div class="right">
+                    <a href="http://goo.gl/maps/9zNd" target="_blank">
+                        <img border="0" src="images/photos/map.jpg" /></a>
+                </div>
+            </div>
+            <div class="clearfix venue" style="margin: 20px 0 0; text-align: center;">
+                <a href="http://progr.ch/" target="_blank">
+                    <img border="0" style="border: 8px solid #000;" src="images/photos/progr.jpg" /></a>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="footer" class="clearfix">
+        <div class="content">
+            <div class="left">
+                <h1>Website designed by</h1>
+                <a href="http://www.relaxintheair.com" class="logo_relaxintheair" target="_blank">Relax in the Air</a>
+            </div>
+            <div class="right">
+                <h1>Event sponsored by</h1>
+                <div class="clearfix" style="padding: 10px 20px 20px 0;">
+                    <a class="webdoc white" href="http://www.webdoc.com/" target="_blank">Sponsored by Webdoc, as the most expressive way to share, Webdoc enables you to create rich media posts in seconds</a>
+                    <a class="nelmio white" href="http://nelm.io/" target="_blank">Sponsored by Nelm.io, the swiss company specialized in building modern web applications</a>
+                </div>
+                <p class="sponsor-search">We are looking for companies that would like to sponsor our event. If you want to offer the lunch or the coffee break to the community don't hesitate to contact Pierre by email at <a href="mailto:pierre@nelm.io">pierre@nelm.io</a>!</p>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="copyright">Organised by JSZurich, JSGeneve and JSBasel</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-48019754-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+          <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+        <![endif]-->
+    <script type="text/javascript">
+
+        function applyAnim(that, x) {
+            $(that).removeClass().addClass(x);
+            var wait = window.setTimeout(function () {
+                $(that).removeClass()
+            }, 1300
+        );
+        }
+
+
+        jQuery(document).ready(function () {
+
+            $('#swissjeese-logo').on('mouseover', function () {
+                applyAnim(this, 'swing');
+            });
+
+            $('#bear').on('mouseover', function () {
+                applyAnim(this, 'wobble');
+            });
+
+            $('#freeticket').on('mouseover', function () {
+                applyAnim(this, 'shake');
+            });
+
+            $('#follow_twitter').on('mouseover', function () {
+                applyAnim(this, 'bounce');
+            });
+
+        });
+    </script>
+</body>
+
+
+</html>

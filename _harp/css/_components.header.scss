@@ -1,0 +1,72 @@
+.header {
+  text-align: center;
+}
+
+.header__box {
+  @extend .wrapper;
+  max-width: 700px;
+  padding: 0 $inuit-base-spacing-unit $inuit-base-spacing-unit $inuit-base-spacing-unit;
+}
+
+.header__intro, .header__date-location {
+  @include font-weight("medium");
+  @include media-query(lap-and-up) {
+    font-size: 24px;
+  }
+}
+
+.header__intro {
+  @include media-query(lap-and-up) {
+    @include font-weight("light");
+  }
+}
+
+.header__date-location {
+  @include font-weight("thin");
+  font-size: 33px;
+
+  @include media-query(lap-and-up) {
+    font-size: 65px;
+  }
+}
+
+.header__aditional {
+  @include media-query(palm) {
+    display: none;
+  }
+}
+
+a.header__tickets-link {
+  display: inline-block;
+  .negative & {
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    @include attention() {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+  font-size: 13px;
+  padding: $inuit-base-spacing-unit/2 (2 * $inuit-base-spacing-unit);
+  margin: ($inuit-base-spacing-unit) 0;
+  position: relative;
+
+  &:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 10px white;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+  }
+}
+
+.tito-submit {
+  @extend .btn;
+}
