@@ -16,7 +16,7 @@ mixin logo(options)
   - swissClass = options.modifier ? 'logo__swiss--' + options.modifier : ''
   - jsClass = options.modifier ? 'logo__js--' + options.modifier : ''
   
-  #{logoTagName}.logo(class=mainClass)(href=options.href)
+  #{logoTagName}.logo(class=mainClass, href=options.href)
     #{titleTagName}.logo__title(class=titleClass)
       span.logo__swiss(class=swissClass) Swiss
       span.logo__js(class=jsClass) JS
