@@ -27,6 +27,7 @@
     "inuit-page": "~0.2.1",
     "inuit-box-sizing": "~0.2.0",
     "inuit-list-inline": "~0.3.2",
-    "inuit-list-ui": "~0.4.1"
+    "inuit-list-ui": "~0.4.1",
+    "inuit-buttons": "~0.4.2"
   }
 }
