@@ -7,7 +7,6 @@ The website uses [harp](http://harpjs.com/) as a static website generator.
     npm install -g harp browser-sync bower
     cd _harp
     bower install
-    cd ..
     harp server . &
     browser-sync start --proxy 'localhost:9000' --files './**'
 
