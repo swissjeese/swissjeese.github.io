@@ -73,25 +73,42 @@ Have fun.
 
 .tito-ticket {
     display: table-row;
+    line-height: 2.5em;
 }
 
 .tito-ticket-name-wrapper {
+    position: relative;
+    z-index: 1;
+
     @include media-query(lap-and-up) {
-      border-bottom: 1px solid $color-brand-inverted;
       display: table-cell;
       vertical-align: top;
-      padding-bottom: 30px;
+    }
+
+    // Line beind the label
+    &:before {
+      @include media-query(lap-and-up) {
+        border-top: 1px solid $color-brand-inverted;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+      }
     }
     
 }
 .tito-ticket-name {
     font-weight: 600;
     text-transform: uppercase;
+    background-color: #ffcc00;
+    padding-right: 20px;
 }
 
 .tito-ticket-price-quantity-wrapper, .tito-ticket-status, .tito-ticket-status-sold-out {
     @include media-query(lap-and-up) {
-      width: 33%;
+      width: 40%;
       display: table-cell;
       vertical-align: top;
     }
@@ -102,8 +119,13 @@ Have fun.
 .tito-ticket-price-quantity-wrapper {
   @include media-query(lap-and-up) {
     padding-bottom: 0;
-    padding-top: 30px;
     vertical-align: bottom;
+  }
+}
+
+.tito-ticket-price-quantity-wrapper {
+  @include media-query(lap-and-up) {
+    padding-left: 5%;
   }
 }
 
@@ -133,8 +155,13 @@ Have fun.
 .tito-submit {
   position: absolute;
   bottom: 10%;
+  background-color: #ffcc00;
+  border: none;
+  color: $color-brand;  
+  padding: 0; 
+  @include inuit-font-size($font-size-2);
   @include media-query(lap-and-up) {
-    left: 10%;
+    left: 6%;
   }
   
 }
