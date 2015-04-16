@@ -61,7 +61,7 @@ Have fun.
 .tito-ticket-list {
   list-style-type: none;
   margin: 0 0 20px 0;
-  padding: 50px;
+  padding: 0 50px 0 50px;
   width: 100%;
 
   @include media-query(lap-and-up) {
@@ -69,6 +69,10 @@ Have fun.
     position: relative;
     z-index: 100;
   }
+}
+
+#tito-previous-releases.tito-ticket-list {
+  padding-top: 50px;
 }
 
 .tito-ticket {
@@ -115,6 +119,10 @@ Have fun.
     padding-bottom: 30px;
 }
 
+.tito-ticket-status-sold-out {
+  padding-bottom: 0;
+}
+
 .tito-ticket-name-wrapper, 
 .tito-ticket-price-quantity-wrapper {
   @include media-query(lap-and-up) {
@@ -123,7 +131,8 @@ Have fun.
   }
 }
 
-.tito-ticket-price-quantity-wrapper {
+.tito-ticket-price-quantity-wrapper,
+.tito-ticket-status {
   @include media-query(lap-and-up) {
     padding-left: 5%;
   }
