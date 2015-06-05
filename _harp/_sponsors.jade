@@ -1,0 +1,37 @@
+mixin sponsors(layout)
+  if layout  == 'index'
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      .layout.layout--no-gutter.box.box--lap-and-up-vertical-spacing
+        .layout__item.lap-and-up-one-whole
+          h2.beta Sponsors
+        .layout__item.lap-and-up-one-half
+          +ginetta
+      .layout.layout--no-gutter.box.box--lap-and-up-vertical-spacing
+        .layout__item.lap-and-up-one-whole
+          h3.gamma Co-Sponsors
+        .layout__item.lap-and-up-one-half
+          +89grad
+        .layout__item.lap-and-up-one-half
+          +swisstxt
+  else
+    .layout.layout--no-gutter.box.box--lap-and-up-vertical-spacing.content
+      .layout__item.lap-and-up-one-whole
+        h2.beta Sponsors
+      .layout__item.lap-and-up-one-third
+        +ginetta
+      .layout__item.lap-and-up-one-third
+        +89grad
+      .layout__item.lap-and-up-one-third
+        +swisstxt
+
+mixin ginetta()
+  a(href="http://ginetta.net" target="_blank")
+    img(src="../media/sponsors/ginetta.png" width="220" alt="Ginetta")
+
+mixin 89grad()
+  a(href="http://89grad.ch" target="_blank")
+    img(src="../media/sponsors/89grad.png" width="220" alt="89grad")
+
+mixin swisstxt()
+  a(href="http://swisstxt.ch" target="_blank")
+    img(src="../media/sponsors/swisstxt.png" width="220" alt="SwissTXT")
