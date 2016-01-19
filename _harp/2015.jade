@@ -3,7 +3,10 @@ extend __layout.jade
 block content
   .wrapper.wrapper--narrow
     .box.content.box--lap-and-up-larger-vertical-spacing
-      h1 Check out the talks of SwissJS 2015!
+      h1 Check out SwissJS 2015!
+      
+      .video
+        iframe(src='https://www.youtube.com/embed/7YznMGY7vMY', width='640', height='360', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
 
     hr
     .box.content.negative
@@ -13,7 +16,8 @@ block content
         h3 Gion Kunz
         h1 AngularJS 2 - A Glance Into the Future
         
-        iframe(src='https://www.youtube.com/embed/7zprDGOxpNk', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/7zprDGOxpNk', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           During this talk, Gion will show you the core concepts of AngularJS 2 and why he believes it will play a major role in combining web standards of the future into a highly efficient framework for large web applications. There is a big controversy about the radical redesign AngularJS was going through in it's latest version. Together we will look at the reasons behind some core decisions made in the upcoming Framework and you have the opportunity to take a look at current developments.
@@ -26,8 +30,8 @@ block content
         h3 Mark Hintz
         h1 React - the Ideas Behind the Hype
         
-        
-        iframe(src='https://www.youtube.com/embed/tqPJ4YB-_TA', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/tqPJ4YB-_TA', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           React, Facebook's flagship front-end rendering library, is causing waves in web development circles, and generating quite a bit of hype. However, the arrival of yet another javascript framework has been met with skepticism by many. (Especially when they see JSX, React's approach to templating.)
@@ -46,7 +50,8 @@ block content
         h3 Stephen Band
         h1 Creating UIs for the Web Audio API
         
-        iframe(src='https://www.youtube.com/embed/tSThM9Aw8ps', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/tSThM9Aw8ps', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           The Web Audio API gives us the power to manipulate an audio processing graph using JavaScript. The audio itself runs in a separate thread, which presents some unique challenges. Stephen discusses how to create UIs that control and reflect the state of the audio graph, and attempts to show that the browser is becoming a creative environment for live performance.
@@ -59,7 +64,8 @@ block content
         h3 Stefanie Taepke
         h1 Location-based Pokémon with NodeJs
         
-        iframe(src='https://www.youtube.com/embed/8yK99XMfBUU', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/8yK99XMfBUU', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           Pokémon for the GameBoy was one of Nintendos most successful Role Play Games in the late 90s. Even though gaming today is on a different level and can make use of so many new features and possibilities, the Pokémon-fan base is still big and growing. But why not combining new technology with this game classic and play it on the next level?
@@ -74,7 +80,8 @@ block content
         h3 Reto Schläpfer
         h1 Typescript
         
-        iframe(src='https://www.youtube.com/embed/-WKGKofd2DI', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/-WKGKofd2DI', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           Typescript is a typed superset of Javascript that compiles to Javascript. It has been developed by Microsoft to enhance the developer productivity in large client-side applications.
@@ -89,7 +96,8 @@ block content
         h3 Pierre-Loic Doulcet
         h1 The dawn of JS for Big Data
         
-        iframe(src='https://www.youtube.com/embed/LHYj3nf9DcU', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/LHYj3nf9DcU', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           Today, Big Data Analysis is mostly done in R/Python/Java. In this talk we will explore what roles can Javascript play in this ecosystem and how you can start to use data science in javascript today.
@@ -104,7 +112,8 @@ block content
         h3 Philip Hofstetter
         h1 This talk lasts 三十分钟
         
-        iframe(src='https://www.youtube.com/embed/YgwbJa_4AZw', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
+        .video
+          iframe(src='https://www.youtube.com/embed/YgwbJa_4AZw', width='560', height='315', frameborder='0', modestbranding='1', theme='light', showinfo ='0', allowfullscreen='')
         
         p.
           Internationalisation (I18n) is so complicated to get right that people are even afraid of spelling it out. It's also deceptive in that you think you got it just right before you're met with a rude awakening as you learn that everything you thought you knew isn't even enough to know that you don't know anything.
