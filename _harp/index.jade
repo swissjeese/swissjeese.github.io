@@ -8,10 +8,15 @@ block content
           span.logo__swiss Swiss
           span.logo__js JS
       p.header__intro.header__aditional
-        | The main event for Swiss JavaScript 
-        | developers to meet and socialize.
+        | SwissJS is a Swiss JavaScript Community event. A one day conference 
+        | with talks around our beloved JS, 
+        br
+        |for and by locals. 
+        //- | The main event for Swiss JavaScript 
+        //- | developers to meet and socialize.
+        //- +logo({modifier: "inline"})
       p.header__date-location
-        | July 18th 2015 in Bern
+        | Bern, June 4th - 5th 2016
         span.header__aditional .
         
       a.header__tickets-link(href="#tickets")
@@ -29,7 +34,7 @@ block content
                     | Last year, over 150 people attended the talks.
                     br
                     | If you feel like sponsoring the event, 
-                    a(href="/sponsoring.html") let us know
+                    a(href="mailto:swissjsconf@gmail.com") let us know
                     | !
                 
                   
@@ -73,18 +78,30 @@ block content
 
     hr
 
-    #tickets.box.box--lap-and-up-larger-vertical-spacing
-      .layout.layout--no-gutter
-        .layout__item.lap-and-up-one-whole
-          div
-            tito-widget(event="swissjs/2015")
+    #tickets
+      .box.box--lap-and-up-larger-vertical-spacing.content
+        h2.gamma Tickets
+        p 
+          | Tickets will be available soon. 
+        p
+          | If you want to get informed as soon
+          | as soon as tickets are available, you can 
+          a(href="http://swissjs.us11.list-manage.com/subscribe/?u=a85ab29e47b65ac554a3ab852&amp;id=a3018a829e") subscibe to our newsletter
+          | .
+        
+        
+          
+    //- #tickets.box.box--lap-and-up-larger-vertical-spacing
+    //-   .layout.layout--no-gutter
+    //-     .layout__item.lap-and-up-one-whole
+    //-       div
+    //-         tito-widget(event="swissjs/2015")
 
-    hr
-    
-    +sponsors('index')
+    //- hr
+    //- 
+    //- +sponsors('index')
 
     script.
       var videoLink = document.getElementById('video-link');
       addListener(videoLink, 'click', function() {ga('send', 'event', 'video', 'play', 'nav-buttons');});
       function addListener(element, type, callback) {if (element.addEventListener) element.addEventListener(type, callback);else if (element.attachEvent) element.attachEvent('on' + type, callback);}
-
