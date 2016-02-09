@@ -29,7 +29,7 @@ block content
               .video__description
                 .video__description-content
                   h2.beta.video__description-title 
-                    | Impressions of 2014
+                    | Impressions of 2015
                   p
                     | Last year, over 150 people attended the talks.
                     br
@@ -40,9 +40,11 @@ block content
                   
         .layout__item.lap-and-up-one-half
           .video
-            a.video__teaser(href="#play-video", data-play)#video-link
-            video.video__player(controls)
-              source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
+            iframe(src="https://www.youtube.com/embed/7YznMGY7vMY?rel=0&amp;showinfo=0" width="100%" height="100%" frameborder="0" modestbranding="1" theme="light" showinfo="0" allowfullscreen="")
+              
+            //- a.video__teaser(href="#play-video", data-play)#video-link
+            //- video.video__player(controls)
+            //-   source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
           
     hr
     .box.box--lap-and-up-larger-vertical-spacing.content
