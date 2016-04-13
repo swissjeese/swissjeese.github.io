@@ -14,32 +14,33 @@ html.no-js
     //- link(href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700', rel='stylesheet', type='text/css')
 
   body
-    .negative.navbar
-      a.hamburger(href="#navigation", data-menu)
-        span.hamburger__text Menu
+    block navigation
+      .negative.navbar
+        a.hamburger(href="#navigation", data-menu)
+          span.hamburger__text Menu
 
-      if isLanding
-        a.twitter.twitter--navbar-landing(
-          href="http://twitter.com/SwissJS",
-        )
-          span.twitter__text @SwissJS
-          include /_twitter.svg
-      else
-        +logo({
-          modifier: "navbar", 
-          titleTag: "h1", 
-          href: "/"
-        })
-                
-        a.twitter.twitter--navbar(
-          href="http://twitter.com/SwissJS",
-        )
-          span.twitter__text @SwissJS
-          include /_twitter.svg
+        if isLanding
+          a.twitter.twitter--navbar-landing(
+            href="http://twitter.com/SwissJS",
+          )
+            span.twitter__text @SwissJS
+            include /_twitter.svg
+        else
+          +logo({
+            modifier: "navbar", 
+            titleTag: "h1", 
+            href: "/"
+          })
+                  
+          a.twitter.twitter--navbar(
+            href="http://twitter.com/SwissJS",
+          )
+            span.twitter__text @SwissJS
+            include /_twitter.svg
 
-      nav.navigation.navigation--lap-and-up
-        ul.navigation__list
-          include __navigation-items.jade
+        nav.navigation.navigation--lap-and-up
+          ul.navigation__list
+            include __navigation-items.jade
 
     block content
 
@@ -49,47 +50,48 @@ html.no-js
     nav.navigation.navigation--palm#navigation
       ul.navigation__list
           include __navigation-items.jade
-    footer.footer
-      +logo({modifier: "footer"})
-      
-      .type__large.footer__organized-by
-        | Organised by 
-        a(href="http://twitter.com/ckuert") Christoph Kuert
-        | , 
-        a(href="http://twitter.com/shvi") Pierre Spring
-        | , 
-        a(href="https://twitter.com/crackofdusk") Dimiter Petrov
-        | , 
-        a(href="http://twitter.com/lejoe") Joel Bez 
-        | and 
-        a(href="http://twitter.com/stefffi") Stefanie Taepke
-        | .
-      p
-        | We are looking for companies that want to take advantage of the 
-        | visibilty of our event. 
-        br
-        //- | Check out our 
-        //- a(href="/sponsoring.html") packages 
-        //- | and email us at 
-        //- a(href="mailto:swissjsconf@gmail.com") swissjsconf@gmail.com 
-        //- | !
-        | If you feel like sponsoring the event, 
-        a(href="mailto:swissjsconf@gmail.com") let us know
-        | !
-      p
-        | We value the comfort and safety of everyone at our event.
-        br
-        | For more information, please read our 
-        a(href="/code-of-conduct.html") code of conduct
-        | .
-      
-      a.twitter.twitter--footer(
-        href="http://twitter.com/SwissJS",
-      )
-        span.twitter__text @SwissJS
-        include /_twitter.svg
-    script(src="/main.js")
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-48019754-1', 'auto');
-      ga('send', 'pageview');
+    block footer
+      footer.footer
+        +logo({modifier: "footer"})
+        
+        .type__large.footer__organized-by
+          | Organised by 
+          a(href="http://twitter.com/ckuert") Christoph Kuert
+          | , 
+          a(href="http://twitter.com/shvi") Pierre Spring
+          | , 
+          a(href="https://twitter.com/crackofdusk") Dimiter Petrov
+          | , 
+          a(href="http://twitter.com/lejoe") Joel Bez 
+          | and 
+          a(href="http://twitter.com/stefffi") Stefanie Taepke
+          | .
+        p
+          | We are looking for companies that want to take advantage of the 
+          | visibilty of our event. 
+          br
+          //- | Check out our 
+          //- a(href="/sponsoring.html") packages 
+          //- | and email us at 
+          //- a(href="mailto:swissjsconf@gmail.com") swissjsconf@gmail.com 
+          //- | !
+          | If you feel like sponsoring the event, 
+          a(href="mailto:swissjsconf@gmail.com") let us know
+          | !
+        p
+          | We value the comfort and safety of everyone at our event.
+          br
+          | For more information, please read our 
+          a(href="/code-of-conduct.html") code of conduct
+          | .
+        
+        a.twitter.twitter--footer(
+          href="http://twitter.com/SwissJS",
+        )
+          span.twitter__text @SwissJS
+          include /_twitter.svg
+      script(src="/main.js")
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-48019754-1', 'auto');
+        ga('send', 'pageview');
