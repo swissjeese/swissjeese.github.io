@@ -1,109 +1,21 @@
 extend __layout.jade
+block navigation
+
+block footer
 
 block content
-  .header.negative
+  .header.header--full.negative
     .header__box
       .logo.header__logo
         h1.logo__title.logo__title--header
           span.logo__swiss Swiss
           span.logo__js JS
-      p.header__intro.header__aditional
-        | SwissJS is a Swiss JavaScript Community event. A two days conference 
-        | with talks around our beloved JS, 
+      p.header__intro
+        | SwissJS is a Swiss JavaScript
         br
-        |for and by locals. 
-        //- | The main event for Swiss JavaScript 
-        //- | developers to meet and socialize.
-        //- +logo({modifier: "inline"})
-      p.header__date-location
-        | Bern, June 4th - 5th 2016
-        span.header__aditional .
-        
-      a.header__tickets-link(href="#tickets")
-        | Get your ticket
-  .wrapper
-    .box.box--lap-and-up-larger-vertical-spacing
-      .layout.layout--no-gutter
-        .layout__item.lap-and-up-one-half
-            .video__description-container
-              .video__description
-                .video__description-content
-                  h2.beta.video__description-title 
-                    | Impressions of 2015
-                  p
-                    | Last year, over 150 people attended the talks.
-                    br
-                    | If you feel like sponsoring the event, 
-                    a(href="mailto:swissjsconf@gmail.com") let us know
-                    | !
-                
-                  
-        .layout__item.lap-and-up-one-half
-          .video
-            iframe(src="https://www.youtube.com/embed/7YznMGY7vMY?rel=0&amp;showinfo=0" width="100%" height="100%" frameborder="0" modestbranding="1" theme="light" showinfo="0" allowfullscreen="")
-              
-            //- a.video__teaser(href="#play-video", data-play)#video-link
-            //- video.video__player(controls)
-            //-   source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
-          
-    hr
-    .box.box--lap-and-up-larger-vertical-spacing.content
-      .layout.layout--no-gutter
-        .layout__item.lap-and-up-one-whole
-          h2.beta.tweets-title 
-            | What they tweeted
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/renestalder/status/622426240356626432
-          <blockquote class="tweets-tweet" lang="en"><p>Thanks <a href="https://twitter.com/ginettateam">@ginettateam</a>, <a href="https://twitter.com/89grad">@89grad</a>, swisstxt.ch and LUFTFILTER REINIGEN for the <a href="https://twitter.com/hashtag/swissjs?src=rela">#swissjs</a> sponsoring.</p>&mdash; René Stalder (@renestalder) <a href="https://twitter.com/renestalder/status/622426240356626432">July 18, 2015</a></blockquote>
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/nebu/status/622429816957075456
-          <blockquote class="tweets-tweet" lang="en"><p>Not only is <a href="https://twitter.com/SwissJS">@SwissJS</a> a wonderful display of Bernese suave, can do attitude and a sharing community, you also learn a lot. Thank you!</p> &mdash; Andreas Nebiker (@nebu) <a href="https://twitter.com/nebu/status/622429816957075456">July 18, 2015</a></blockquote>
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/heyyeah/status/622464197117497344
-          <blockquote class="tweets-tweet" lang="en"><p><a href="https://twitter.com/SwissJS">@SwissJS</a> <a href="https://twitter.com/ginettateam">@ginettateam</a> <a href="https://twitter.com/swisstxt">@swisstxt</a> <a href="https://twitter.com/89grad">@89grad</a> Big thanks! Annual recharge of Swiss JS community and great talks <a href="https://twitter.com/hashtag/swissjs?src=rela">#swissjs</a></p>&mdash; heyyeah (@heyyeah) <a href="https://twitter.com/heyyeah/status/622464197117497344">July 18, 2015</a></blockquote>
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/featureenvy/status/493106904387043328
-          <blockquote class="tweets-tweet" lang="en" ><p>If there will be a <a href="https://twitter.com/swissJS">@SwissJeese</a> next year you owe it yourself to be there. What an amazing conference!</p>&mdash; Andreas Arnold (@featureenvy) <a href="https://twitter.com/featureenvy/status/493106904387043328">July 26, 2014</a></blockquote>
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/michellesanver/status/622540592527093760
-          <blockquote class="tweets-tweet" lang="en"><p>The talks at <a href="https://twitter.com/swissJS">@SwissJS</a> were just as hot as the weather, thanks for nice technology in a friendly atmosphere. See you next year! :) <a href="https://twitter.com/hashtag/swissjs?src=rela">#swissJS</a></p>&mdash; Michelle (@michellesanver) <a href="https://twitter.com/michellesanver/status/622540592527093760">July 19, 2015</a></blockquote>
-
-        .layout__item.lap-and-up-one-third
-          //- https://twitter.com/marcbaechinger/status/493109544084848640
-          <blockquote class="tweets-tweet" lang="en"><p><a href="https://twitter.com/swissJS">@SwissJeese</a> was a super-fresh conference. I&#39;m sure I&#39;ll be there in a year again. Many thx to all who made it happen.</p>&mdash; Marc Bächinger (@marcbaechinger) <a href="https://twitter.com/marcbaechinger/status/493109544084848640">July 26, 2014</a></blockquote>
-
-
-    hr
-
-    #tickets
-      .box.box--lap-and-up-larger-vertical-spacing.content
-        h2.gamma Tickets
-        p 
-          | Tickets will be available soon. 
-        p
-          | If you want to get informed as soon
-          | as soon as tickets are available, you can 
-          a(href="http://swissjs.us11.list-manage.com/subscribe/?u=a85ab29e47b65ac554a3ab852&amp;id=a3018a829e") subscribe to our newsletter
-          | .
-        
-        
-          
-    //- #tickets.box.box--lap-and-up-larger-vertical-spacing
-    //-   .layout.layout--no-gutter
-    //-     .layout__item.lap-and-up-one-whole
-    //-       div
-    //-         tito-widget(event="swissjs/2015")
-
-    //- hr
-    //- 
-    //- +sponsors('index')
-
-    script.
-      var videoLink = document.getElementById('video-link');
-      addListener(videoLink, 'click', function() {ga('send', 'event', 'video', 'play', 'nav-buttons');});
-      function addListener(element, type, callback) {if (element.addEventListener) element.addEventListener(type, callback);else if (element.attachEvent) element.attachEvent('on' + type, callback);}
+        | community event for and by locals. 
+      p.header__intro
+        | Past editions:      
+      a(href='/2014') 2014
+      | 
+      a(href='/2015') 2015
