@@ -1,10 +1,9 @@
 extend __layout.jade
-block navigation
 
 block footer
 
 block content
-  .header.header--full.negative
+  .header.negative
     .header__box
       .logo.header__logo
         h1.logo__title.logo__title--header
@@ -13,9 +12,33 @@ block content
       p.header__intro
         | SwissJS is a Swiss JavaScript
         br
-        | community event for and by locals. 
-      p.header__intro
-        | Past editions:      
-      a(href='/2014') 2014
-      | 
-      a(href='/2015') 2015
+        | community event for and by locals.
+  .wrapper
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      //- h1 Past editions
+      .layout
+        .layout__item.lap-and-up-one-half
+          h2.beta.video__description-title 
+            a(href="/2015") 2015
+          .video
+            iframe(src="https://www.youtube.com/embed/7YznMGY7vMY?rel=0&amp;showinfo=0" width="100%" height="100%" frameborder="0" modestbranding="1" theme="light" showinfo="0" allowfullscreen="")
+        .layout__item.lap-and-up-one-half
+
+          h2.beta.video__description-title 
+            a(href="/2014") 2014
+          .video
+            a.video__teaser(href="#play-video", data-play)#video-link
+            video.video__player(controls)
+              source(src="http://files.pierrespring.com/SJ.mp4", type="video/mp4")
+    .box.box--lap-and-up-larger-vertical-spacing.content
+      h2.gamma Newsletter
+      p
+        | If you want to stay in touch, 
+        a(href="http://swissjs.us11.list-manage.com/subscribe/?u=a85ab29e47b65ac554a3ab852&amp;id=a3018a829e") subscribe to our newsletter
+        | .          
+              
+            
+    script.
+      var videoLink = document.getElementById('video-link');
+      addListener(videoLink, 'click', function() {ga('send', 'event', 'video', 'play', 'nav-buttons');});
+      function addListener(element, type, callback) {if (element.addEventListener) element.addEventListener(type, callback);else if (element.attachEvent) element.attachEvent('on' + type, callback);}                
